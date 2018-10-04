@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::path::Path;
 
-use failure::Error
+use failure::Error;
 
 use serde_yaml;
 use url::Url;

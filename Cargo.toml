@@ -14,7 +14,11 @@ name = "kubernetes_rust"
 path = "src/lib.rs"
 
 [dependencies]
+dirs = "1.0.4"
+serde = "1.0.79"
+serde_yaml = "0.8.5"
 serde_derive = "1.0.79"
+url = "1.7.1"
 url_serde = "0.2.0"
 failure = "0.1.2"
 
