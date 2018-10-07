@@ -1,6 +1,6 @@
 # \RbacAuthorizationV1beta1Api
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -48,7 +48,7 @@ Method | HTTP request | Description
 
 
 # **create_rbac_authorization_v1beta1_cluster_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole create_rbac_authorization_v1beta1_cluster_role(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole create_rbac_authorization_v1beta1_cluster_role(ctx, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role, optional)
 
 
 create a ClusterRole
@@ -58,7 +58,7 @@ create a ClusterRole
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -66,7 +66,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -79,13 +79,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_rbac_authorization_v1beta1_cluster_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding create_rbac_authorization_v1beta1_cluster_role_binding(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding create_rbac_authorization_v1beta1_cluster_role_binding(ctx, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding, optional)
 
 
 create a ClusterRoleBinding
@@ -95,7 +95,7 @@ create a ClusterRoleBinding
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -103,7 +103,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -116,13 +116,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_rbac_authorization_v1beta1_namespaced_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role create_rbac_authorization_v1beta1_namespaced_role(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role create_rbac_authorization_v1beta1_namespaced_role(ctx, namespace, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role, optional)
 
 
 create a Role
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -142,7 +142,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -155,13 +155,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_rbac_authorization_v1beta1_namespaced_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding create_rbac_authorization_v1beta1_namespaced_role_binding(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding create_rbac_authorization_v1beta1_namespaced_role_binding(ctx, namespace, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding, optional)
 
 
 create a RoleBinding
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -181,7 +181,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -194,13 +194,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_rbac_authorization_v1beta1_cluster_role**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_cluster_role(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_cluster_role(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a ClusterRole
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRole | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -220,7 +220,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRole | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -236,13 +236,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_rbac_authorization_v1beta1_cluster_role_binding**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a ClusterRoleBinding
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRoleBinding | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -262,7 +262,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRoleBinding | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -446,13 +446,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_rbac_authorization_v1beta1_namespaced_role**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a Role
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Role | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -474,7 +474,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Role | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -490,13 +490,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_rbac_authorization_v1beta1_namespaced_role_binding**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a RoleBinding
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the RoleBinding | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -518,7 +518,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the RoleBinding | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -534,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -558,7 +558,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -599,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -640,7 +640,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -683,7 +683,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -726,7 +726,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -767,7 +767,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -808,13 +808,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_rbac_authorization_v1beta1_cluster_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole patch_rbac_authorization_v1beta1_cluster_role(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole patch_rbac_authorization_v1beta1_cluster_role(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified ClusterRole
@@ -825,7 +825,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRole | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -834,7 +834,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRole | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_rbac_authorization_v1beta1_cluster_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding patch_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding patch_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified ClusterRoleBinding
@@ -864,7 +864,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRoleBinding | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -873,7 +873,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRoleBinding | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -892,7 +892,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_rbac_authorization_v1beta1_namespaced_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role patch_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role patch_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified Role
@@ -904,7 +904,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Role | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -914,7 +914,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Role | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -933,7 +933,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_rbac_authorization_v1beta1_namespaced_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding patch_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding patch_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified RoleBinding
@@ -945,7 +945,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the RoleBinding | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -955,7 +955,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the RoleBinding | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1005,7 +1005,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1042,7 +1042,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1081,7 +1081,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1120,13 +1120,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_rbac_authorization_v1beta1_cluster_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole replace_rbac_authorization_v1beta1_cluster_role(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRole replace_rbac_authorization_v1beta1_cluster_role(ctx, name, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role, optional)
 
 
 replace the specified ClusterRole
@@ -1137,7 +1137,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRole | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1146,7 +1146,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRole | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRole**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRole.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1159,13 +1159,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_rbac_authorization_v1beta1_cluster_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding replace_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding replace_rbac_authorization_v1beta1_cluster_role_binding(ctx, name, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding, optional)
 
 
 replace the specified ClusterRoleBinding
@@ -1176,7 +1176,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ClusterRoleBinding | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1185,7 +1185,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ClusterRoleBinding | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_cluster_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1ClusterRoleBinding.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1198,13 +1198,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_rbac_authorization_v1beta1_namespaced_role**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role replace_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1Role replace_rbac_authorization_v1beta1_namespaced_role(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role, optional)
 
 
 replace the specified Role
@@ -1216,7 +1216,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Role | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1226,7 +1226,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Role | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role** | [**IoK8sKubernetesPkgApisRbacV1beta1Role**](IoK8sKubernetesPkgApisRbacV1beta1Role.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1239,13 +1239,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_rbac_authorization_v1beta1_namespaced_role_binding**
-> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding replace_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisRbacV1beta1RoleBinding replace_rbac_authorization_v1beta1_namespaced_role_binding(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding, optional)
 
 
 replace the specified RoleBinding
@@ -1257,7 +1257,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the RoleBinding | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1267,7 +1267,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the RoleBinding | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_rbac_v1beta1_role_binding** | [**IoK8sKubernetesPkgApisRbacV1beta1RoleBinding**](IoK8sKubernetesPkgApisRbacV1beta1RoleBinding.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1280,7 +1280,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1323,7 +1323,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1366,7 +1366,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1407,7 +1407,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1448,7 +1448,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1493,7 +1493,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1538,7 +1538,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1581,7 +1581,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1624,7 +1624,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1665,7 +1665,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1706,7 +1706,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

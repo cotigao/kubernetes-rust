@@ -1,6 +1,6 @@
 # \AdmissionregistrationV1alpha1Api
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 
 # **create_admissionregistration_v1alpha1_external_admission_hook_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration create_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration create_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration, optional)
 
 
 create an ExternalAdmissionHookConfiguration
@@ -36,7 +36,7 @@ create an ExternalAdmissionHookConfiguration
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -44,7 +44,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -57,13 +57,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_admissionregistration_v1alpha1_initializer_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration create_admissionregistration_v1alpha1_initializer_configuration(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration create_admissionregistration_v1alpha1_initializer_configuration(ctx, io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration, optional)
 
 
 create an InitializerConfiguration
@@ -73,7 +73,7 @@ create an InitializerConfiguration
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -81,7 +81,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -176,13 +176,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_admissionregistration_v1alpha1_external_admission_hook_configuration**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete an ExternalAdmissionHookConfiguration
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -202,7 +202,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -218,13 +218,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_admissionregistration_v1alpha1_initializer_configuration**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_admissionregistration_v1alpha1_initializer_configuration(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_admissionregistration_v1alpha1_initializer_configuration(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete an InitializerConfiguration
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the InitializerConfiguration | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -244,7 +244,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the InitializerConfiguration | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -284,7 +284,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -366,13 +366,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_admissionregistration_v1alpha1_external_admission_hook_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration patch_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration patch_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified ExternalAdmissionHookConfiguration
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -392,7 +392,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_admissionregistration_v1alpha1_initializer_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration patch_admissionregistration_v1alpha1_initializer_configuration(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration patch_admissionregistration_v1alpha1_initializer_configuration(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified InitializerConfiguration
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the InitializerConfiguration | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -431,7 +431,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the InitializerConfiguration | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -522,13 +522,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_admissionregistration_v1alpha1_external_admission_hook_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration replace_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration replace_admissionregistration_v1alpha1_external_admission_hook_configuration(ctx, name, io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration, optional)
 
 
 replace the specified ExternalAdmissionHookConfiguration
@@ -539,7 +539,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
-  **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -548,7 +548,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ExternalAdmissionHookConfiguration | 
- **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_external_admission_hook_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1ExternalAdmissionHookConfiguration.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -561,13 +561,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_admissionregistration_v1alpha1_initializer_configuration**
-> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration replace_admissionregistration_v1alpha1_initializer_configuration(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration replace_admissionregistration_v1alpha1_initializer_configuration(ctx, name, io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration, optional)
 
 
 replace the specified InitializerConfiguration
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the InitializerConfiguration | 
-  **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -587,7 +587,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the InitializerConfiguration | 
- **body** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_admissionregistration_v1alpha1_initializer_configuration** | [**IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration**](IoK8sKubernetesPkgApisAdmissionregistrationV1alpha1InitializerConfiguration.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -600,7 +600,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -643,7 +643,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -684,7 +684,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -768,7 +768,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**started_at** | [***::models::IoK8sApimachineryPkgApisMetaV1Time**](io.k8s.apimachinery.pkg.apis.meta.v1.Time.md) | Time at which the container was last (re-)started | [optional] [default to null]
+**started_at** | **String** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

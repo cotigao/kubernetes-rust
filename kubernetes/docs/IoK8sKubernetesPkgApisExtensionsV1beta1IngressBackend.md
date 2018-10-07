@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**service_name** | **String** | Specifies the name of the referenced service. | [default to null]
-**service_port** | [***::models::IoK8sApimachineryPkgUtilIntstrIntOrString**](io.k8s.apimachinery.pkg.util.intstr.IntOrString.md) | Specifies the port of the referenced service. | [default to null]
+**service_name** | **String** | Specifies the name of the referenced service. | 
+**service_port** | **String** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

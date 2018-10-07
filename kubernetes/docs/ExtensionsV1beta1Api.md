@@ -1,6 +1,6 @@
 # \ExtensionsV1beta1Api
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -103,7 +103,7 @@ Method | HTTP request | Description
 
 
 # **create_extensions_v1beta1_namespaced_daemon_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet create_extensions_v1beta1_namespaced_daemon_set(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet create_extensions_v1beta1_namespaced_daemon_set(ctx, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set, optional)
 
 
 create a DaemonSet
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -123,7 +123,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -136,13 +136,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_namespaced_deployment**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment create_extensions_v1beta1_namespaced_deployment(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment create_extensions_v1beta1_namespaced_deployment(ctx, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment, optional)
 
 
 create a Deployment
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -162,7 +162,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -175,13 +175,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_namespaced_deployment_rollback**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback create_extensions_v1beta1_namespaced_deployment_rollback(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback create_extensions_v1beta1_namespaced_deployment_rollback(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment_rollback, optional)
 
 
 create rollback of a Deployment
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DeploymentRollback | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback**](IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment_rollback** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback**](IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DeploymentRollback | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback**](IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment_rollback** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback**](IoK8sKubernetesPkgApisExtensionsV1beta1DeploymentRollback.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -216,13 +216,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_namespaced_ingress**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress create_extensions_v1beta1_namespaced_ingress(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress create_extensions_v1beta1_namespaced_ingress(ctx, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress, optional)
 
 
 create an Ingress
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -242,7 +242,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -255,13 +255,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_namespaced_network_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy create_extensions_v1beta1_namespaced_network_policy(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy create_extensions_v1beta1_namespaced_network_policy(ctx, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy, optional)
 
 
 create a NetworkPolicy
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -281,7 +281,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -294,13 +294,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_namespaced_replica_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet create_extensions_v1beta1_namespaced_replica_set(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet create_extensions_v1beta1_namespaced_replica_set(ctx, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set, optional)
 
 
 create a ReplicaSet
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -320,7 +320,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -333,13 +333,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_pod_security_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy create_extensions_v1beta1_pod_security_policy(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy create_extensions_v1beta1_pod_security_policy(ctx, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy, optional)
 
 
 create a PodSecurityPolicy
@@ -349,7 +349,7 @@ create a PodSecurityPolicy
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -357,7 +357,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -370,13 +370,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_extensions_v1beta1_third_party_resource**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource create_extensions_v1beta1_third_party_resource(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource create_extensions_v1beta1_third_party_resource(ctx, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource, optional)
 
 
 create a ThirdPartyResource
@@ -386,7 +386,7 @@ create a ThirdPartyResource
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -394,7 +394,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -450,7 +450,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -579,7 +579,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -622,7 +622,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -663,7 +663,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -704,13 +704,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_namespaced_daemon_set**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a DaemonSet
@@ -722,7 +722,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DaemonSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -732,7 +732,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DaemonSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -748,13 +748,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_namespaced_deployment**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a Deployment
@@ -766,7 +766,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Deployment | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -776,7 +776,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Deployment | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -792,13 +792,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_namespaced_ingress**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete an Ingress
@@ -810,7 +810,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Ingress | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -820,7 +820,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Ingress | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -836,13 +836,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_namespaced_network_policy**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a NetworkPolicy
@@ -854,7 +854,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the NetworkPolicy | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -864,7 +864,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the NetworkPolicy | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -880,13 +880,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_namespaced_replica_set**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a ReplicaSet
@@ -898,7 +898,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ReplicaSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -908,7 +908,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ReplicaSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -924,13 +924,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_pod_security_policy**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_pod_security_policy(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_pod_security_policy(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a PodSecurityPolicy
@@ -941,7 +941,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the PodSecurityPolicy | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -950,7 +950,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the PodSecurityPolicy | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -966,13 +966,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_extensions_v1beta1_third_party_resource**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_third_party_resource(ctx, name, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_extensions_v1beta1_third_party_resource(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a ThirdPartyResource
@@ -983,7 +983,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ThirdPartyResource | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -992,7 +992,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ThirdPartyResource | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -1008,7 +1008,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1032,7 +1032,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1073,7 +1073,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1114,7 +1114,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1155,7 +1155,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1198,7 +1198,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1241,7 +1241,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1284,7 +1284,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1327,7 +1327,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1370,7 +1370,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1411,7 +1411,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1452,7 +1452,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1493,7 +1493,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1534,13 +1534,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_daemon_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet patch_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet patch_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified DaemonSet
@@ -1552,7 +1552,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DaemonSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1562,7 +1562,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DaemonSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1581,7 +1581,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_daemon_set_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet patch_extensions_v1beta1_namespaced_daemon_set_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet patch_extensions_v1beta1_namespaced_daemon_set_status(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update status of the specified DaemonSet
@@ -1593,7 +1593,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DaemonSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1603,7 +1603,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DaemonSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1622,7 +1622,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_deployment**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment patch_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment patch_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified Deployment
@@ -1634,7 +1634,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Deployment | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1644,7 +1644,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Deployment | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1663,7 +1663,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_deployment_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_deployment_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_deployment_scale(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update scale of the specified Deployment
@@ -1675,7 +1675,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1685,7 +1685,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1704,7 +1704,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_deployment_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment patch_extensions_v1beta1_namespaced_deployment_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment patch_extensions_v1beta1_namespaced_deployment_status(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update status of the specified Deployment
@@ -1716,7 +1716,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Deployment | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1726,7 +1726,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Deployment | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1745,7 +1745,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_ingress**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress patch_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress patch_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified Ingress
@@ -1757,7 +1757,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Ingress | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1767,7 +1767,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Ingress | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1786,7 +1786,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_ingress_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress patch_extensions_v1beta1_namespaced_ingress_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress patch_extensions_v1beta1_namespaced_ingress_status(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update status of the specified Ingress
@@ -1798,7 +1798,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Ingress | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1808,7 +1808,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Ingress | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1827,7 +1827,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_network_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy patch_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy patch_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified NetworkPolicy
@@ -1839,7 +1839,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the NetworkPolicy | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1849,7 +1849,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the NetworkPolicy | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1868,7 +1868,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_replica_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet patch_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet patch_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified ReplicaSet
@@ -1880,7 +1880,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ReplicaSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1890,7 +1890,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ReplicaSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1909,7 +1909,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_replica_set_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_replica_set_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_replica_set_scale(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update scale of the specified ReplicaSet
@@ -1921,7 +1921,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1931,7 +1931,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1950,7 +1950,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_replica_set_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet patch_extensions_v1beta1_namespaced_replica_set_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet patch_extensions_v1beta1_namespaced_replica_set_status(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update status of the specified ReplicaSet
@@ -1962,7 +1962,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ReplicaSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -1972,7 +1972,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ReplicaSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -1991,7 +1991,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_namespaced_replication_controller_dummy_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_replication_controller_dummy_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale patch_extensions_v1beta1_namespaced_replication_controller_dummy_scale(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update scale of the specified ReplicationControllerDummy
@@ -2003,7 +2003,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2013,7 +2013,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2032,7 +2032,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_pod_security_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy patch_extensions_v1beta1_pod_security_policy(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy patch_extensions_v1beta1_pod_security_policy(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified PodSecurityPolicy
@@ -2043,7 +2043,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the PodSecurityPolicy | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2052,7 +2052,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the PodSecurityPolicy | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2071,7 +2071,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_extensions_v1beta1_third_party_resource**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource patch_extensions_v1beta1_third_party_resource(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource patch_extensions_v1beta1_third_party_resource(ctx, name, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified ThirdPartyResource
@@ -2082,7 +2082,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ThirdPartyResource | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2091,7 +2091,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ThirdPartyResource | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2145,7 +2145,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2184,7 +2184,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2225,7 +2225,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2264,7 +2264,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2303,7 +2303,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2344,7 +2344,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2383,7 +2383,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2424,7 +2424,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2465,7 +2465,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2504,7 +2504,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2543,7 +2543,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2582,7 +2582,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2621,7 +2621,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2660,13 +2660,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_daemon_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet replace_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet replace_extensions_v1beta1_namespaced_daemon_set(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set, optional)
 
 
 replace the specified DaemonSet
@@ -2678,7 +2678,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DaemonSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2688,7 +2688,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DaemonSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2701,13 +2701,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_daemon_set_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet replace_extensions_v1beta1_namespaced_daemon_set_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet replace_extensions_v1beta1_namespaced_daemon_set_status(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set, optional)
 
 
 replace status of the specified DaemonSet
@@ -2719,7 +2719,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the DaemonSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2729,7 +2729,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the DaemonSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_daemon_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet**](IoK8sKubernetesPkgApisExtensionsV1beta1DaemonSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2742,13 +2742,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_deployment**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment replace_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment replace_extensions_v1beta1_namespaced_deployment(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment, optional)
 
 
 replace the specified Deployment
@@ -2760,7 +2760,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Deployment | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2770,7 +2770,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Deployment | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2783,13 +2783,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_deployment_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_deployment_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_deployment_scale(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale, optional)
 
 
 replace scale of the specified Deployment
@@ -2801,7 +2801,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2811,7 +2811,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2824,13 +2824,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_deployment_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment replace_extensions_v1beta1_namespaced_deployment_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Deployment replace_extensions_v1beta1_namespaced_deployment_status(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment, optional)
 
 
 replace status of the specified Deployment
@@ -2842,7 +2842,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Deployment | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2852,7 +2852,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Deployment | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_deployment** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Deployment**](IoK8sKubernetesPkgApisExtensionsV1beta1Deployment.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2865,13 +2865,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_ingress**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress replace_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress replace_extensions_v1beta1_namespaced_ingress(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress, optional)
 
 
 replace the specified Ingress
@@ -2883,7 +2883,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Ingress | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2893,7 +2893,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Ingress | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2906,13 +2906,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_ingress_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress replace_extensions_v1beta1_namespaced_ingress_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Ingress replace_extensions_v1beta1_namespaced_ingress_status(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress, optional)
 
 
 replace status of the specified Ingress
@@ -2924,7 +2924,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Ingress | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2934,7 +2934,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Ingress | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_ingress** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Ingress**](IoK8sKubernetesPkgApisExtensionsV1beta1Ingress.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2947,13 +2947,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_network_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy replace_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy replace_extensions_v1beta1_namespaced_network_policy(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy, optional)
 
 
 replace the specified NetworkPolicy
@@ -2965,7 +2965,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the NetworkPolicy | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -2975,7 +2975,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the NetworkPolicy | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_network_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1NetworkPolicy.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -2988,13 +2988,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_replica_set**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet replace_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet replace_extensions_v1beta1_namespaced_replica_set(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set, optional)
 
 
 replace the specified ReplicaSet
@@ -3006,7 +3006,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ReplicaSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3016,7 +3016,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ReplicaSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3029,13 +3029,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_replica_set_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_replica_set_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_replica_set_scale(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale, optional)
 
 
 replace scale of the specified ReplicaSet
@@ -3047,7 +3047,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3057,7 +3057,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3070,13 +3070,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_replica_set_status**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet replace_extensions_v1beta1_namespaced_replica_set_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet replace_extensions_v1beta1_namespaced_replica_set_status(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set, optional)
 
 
 replace status of the specified ReplicaSet
@@ -3088,7 +3088,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ReplicaSet | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3098,7 +3098,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ReplicaSet | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_replica_set** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet**](IoK8sKubernetesPkgApisExtensionsV1beta1ReplicaSet.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3111,13 +3111,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_namespaced_replication_controller_dummy_scale**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_replication_controller_dummy_scale(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1Scale replace_extensions_v1beta1_namespaced_replication_controller_dummy_scale(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale, optional)
 
 
 replace scale of the specified ReplicationControllerDummy
@@ -3129,7 +3129,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the Scale | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3139,7 +3139,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the Scale | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_scale** | [**IoK8sKubernetesPkgApisExtensionsV1beta1Scale**](IoK8sKubernetesPkgApisExtensionsV1beta1Scale.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3152,13 +3152,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_pod_security_policy**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy replace_extensions_v1beta1_pod_security_policy(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy replace_extensions_v1beta1_pod_security_policy(ctx, name, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy, optional)
 
 
 replace the specified PodSecurityPolicy
@@ -3169,7 +3169,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the PodSecurityPolicy | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3178,7 +3178,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the PodSecurityPolicy | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_pod_security_policy** | [**IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy**](IoK8sKubernetesPkgApisExtensionsV1beta1PodSecurityPolicy.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3191,13 +3191,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_extensions_v1beta1_third_party_resource**
-> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource replace_extensions_v1beta1_third_party_resource(ctx, name, body, optional)
+> ::models::IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource replace_extensions_v1beta1_third_party_resource(ctx, name, io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource, optional)
 
 
 replace the specified ThirdPartyResource
@@ -3208,7 +3208,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the ThirdPartyResource | 
-  **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -3217,7 +3217,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the ThirdPartyResource | 
- **body** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_extensions_v1beta1_third_party_resource** | [**IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource**](IoK8sKubernetesPkgApisExtensionsV1beta1ThirdPartyResource.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -3230,7 +3230,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3271,7 +3271,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3312,7 +3312,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3353,7 +3353,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3398,7 +3398,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3441,7 +3441,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3486,7 +3486,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3529,7 +3529,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3574,7 +3574,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3617,7 +3617,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3662,7 +3662,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3705,7 +3705,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3750,7 +3750,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3793,7 +3793,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3834,7 +3834,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3877,7 +3877,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3918,7 +3918,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3959,7 +3959,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -4002,7 +4002,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -4043,7 +4043,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

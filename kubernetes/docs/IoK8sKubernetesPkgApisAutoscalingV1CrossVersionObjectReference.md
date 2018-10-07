@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**api_version** | **String** | API version of the referent | [optional] [default to null]
-**kind** | **String** | Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds\&quot; | [default to null]
-**name** | **String** | Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names | [default to null]
+**api_version** | **String** | API version of the referent | [optional] 
+**kind** | **String** | Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds\&quot; | 
+**name** | **String** | Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

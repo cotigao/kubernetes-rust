@@ -1,6 +1,6 @@
 # \AutoscalingV1Api
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 
 # **create_autoscaling_v1_namespaced_horizontal_pod_autoscaler**
-> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler create_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler create_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, namespace, io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler, optional)
 
 
 create a HorizontalPodAutoscaler
@@ -33,7 +33,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -42,7 +42,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -98,13 +98,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_autoscaling_v1_namespaced_horizontal_pod_autoscaler**
-> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, body, optional)
+> ::models::IoK8sApimachineryPkgApisMetaV1Status delete_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_delete_options, optional)
 
 
 delete a HorizontalPodAutoscaler
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the HorizontalPodAutoscaler | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the HorizontalPodAutoscaler | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_delete_options** | [**IoK8sApimachineryPkgApisMetaV1DeleteOptions**](IoK8sApimachineryPkgApisMetaV1DeleteOptions.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
  **grace_period_seconds** | **i32**| The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately. | 
  **orphan_dependents** | **bool**| Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the \&quot;orphan\&quot; finalizer will be added to/removed from the object&#39;s finalizers list. Either this field or PropagationPolicy may be set, but not both. | 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -166,7 +166,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -250,13 +250,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler**
-> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update the specified HorizontalPodAutoscaler
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the HorizontalPodAutoscaler | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the HorizontalPodAutoscaler | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status**
-> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler patch_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status(ctx, name, namespace, io_k8s_apimachinery_pkg_apis_meta_v1_patch, optional)
 
 
 partially update status of the specified HorizontalPodAutoscaler
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the HorizontalPodAutoscaler | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+  **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the HorizontalPodAutoscaler | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
+ **io_k8s_apimachinery_pkg_apis_meta_v1_patch** | [**IoK8sApimachineryPkgApisMetaV1Patch**](IoK8sApimachineryPkgApisMetaV1Patch.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -373,7 +373,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -412,13 +412,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler**
-> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler, optional)
 
 
 replace the specified HorizontalPodAutoscaler
@@ -430,7 +430,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the HorizontalPodAutoscaler | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -440,7 +440,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the HorizontalPodAutoscaler | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -453,13 +453,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status**
-> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status(ctx, name, namespace, body, optional)
+> ::models::IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler replace_autoscaling_v1_namespaced_horizontal_pod_autoscaler_status(ctx, name, namespace, io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler, optional)
 
 
 replace status of the specified HorizontalPodAutoscaler
@@ -471,7 +471,7 @@ Name | Type | Description  | Notes
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
   **name** | **String**| name of the HorizontalPodAutoscaler | 
   **namespace** | **String**| object name and auth scope, such as for teams and projects | 
-  **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **String**| name of the HorizontalPodAutoscaler | 
  **namespace** | **String**| object name and auth scope, such as for teams and projects | 
- **body** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_autoscaling_v1_horizontal_pod_autoscaler** | [**IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler**](IoK8sKubernetesPkgApisAutoscalingV1HorizontalPodAutoscaler.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -494,7 +494,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -535,7 +535,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -580,7 +580,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -623,7 +623,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf, application/json;stream=watch, application/vnd.kubernetes.protobuf;stream=watch
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -1,6 +1,6 @@
 # \AuthenticationV1beta1Api
 
-All URIs are relative to *https://localhost*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **create_authentication_v1beta1_token_review**
-> ::models::IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview create_authentication_v1beta1_token_review(ctx, body, optional)
+> ::models::IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview create_authentication_v1beta1_token_review(ctx, io_k8s_kubernetes_pkg_apis_authentication_v1beta1_token_review, optional)
 
 
 create a TokenReview
@@ -19,7 +19,7 @@ create a TokenReview
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **body** | [**IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview**](IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview.md)|  | 
+  **io_k8s_kubernetes_pkg_apis_authentication_v1beta1_token_review** | [**IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview**](IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview.md)|  | 
  **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
 
 ### Optional Parameters
@@ -27,7 +27,7 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview**](IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview.md)|  | 
+ **io_k8s_kubernetes_pkg_apis_authentication_v1beta1_token_review** | [**IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview**](IoK8sKubernetesPkgApisAuthenticationV1beta1TokenReview.md)|  | 
  **pretty** | **String**| If &#39;true&#39;, then the output is pretty printed. | 
 
 ### Return type
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -64,7 +64,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/yaml, application/vnd.kubernetes.protobuf
+ - **Content-Type**: Not defined
  - **Accept**: application/json, application/yaml, application/vnd.kubernetes.protobuf
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

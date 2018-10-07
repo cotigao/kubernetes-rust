@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**object** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1ObjectMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.ObjectMetricStatus.md) | object refers to a metric describing a single kubernetes object (for example, hits-per-second on an Ingress object). | [optional] [default to null]
-**pods** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1PodsMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.PodsMetricStatus.md) | pods refers to a metric describing each pod in the current scale target (for example, transactions-processed-per-second).  The values will be averaged together before being compared to the target value. | [optional] [default to null]
-**resource** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1ResourceMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.ResourceMetricStatus.md) | resource refers to a resource metric (such as those specified in requests and limits) known to Kubernetes describing each pod in the current scale target (e.g. CPU or memory). Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \&quot;pods\&quot; source. | [optional] [default to null]
-**_type** | **String** | type is the type of metric source.  It will match one of the fields below. | [default to null]
+**object** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1ObjectMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.ObjectMetricStatus.md) |  | [optional] 
+**pods** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1PodsMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.PodsMetricStatus.md) |  | [optional] 
+**resource** | [***::models::IoK8sKubernetesPkgApisAutoscalingV2alpha1ResourceMetricStatus**](io.k8s.kubernetes.pkg.apis.autoscaling.v2alpha1.ResourceMetricStatus.md) |  | [optional] 
+**_type** | **String** | type is the type of metric source.  It will match one of the fields below. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
