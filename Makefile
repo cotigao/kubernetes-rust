@@ -4,5 +4,5 @@ VERSION = 1.7.12
 update-client:
 	openapi-generator generate \
 		-i https://raw.githubusercontent.com/kubernetes/kubernetes/v${VERSION}/api/openapi-spec/swagger.json \
-		--lang rust --output kubernetes \
+		-g rust --output kubernetes \
 		-DpackageName=kubernetes -DpackageVersion=${VERSION}
