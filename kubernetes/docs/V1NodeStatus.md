@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **allocatable** | **::std::collections::HashMap<String, String>** | Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity. | [optional] [default to null]
 **capacity** | **::std::collections::HashMap<String, String>** | Capacity represents the total resources of a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity | [optional] [default to null]
 **conditions** | [**Vec<::models::V1NodeCondition>**](v1.NodeCondition.md) | Conditions is an array of current observed node conditions. More info: https://kubernetes.io/docs/concepts/nodes/node/#condition | [optional] [default to null]
+**config** | [***::models::V1NodeConfigStatus**](v1.NodeConfigStatus.md) | Status of the config assigned to the node via the dynamic Kubelet config feature. | [optional] [default to null]
 **daemon_endpoints** | [***::models::V1NodeDaemonEndpoints**](v1.NodeDaemonEndpoints.md) | Endpoints of daemons running on the Node. | [optional] [default to null]
 **images** | [**Vec<::models::V1ContainerImage>**](v1.ContainerImage.md) | List of container images on this node | [optional] [default to null]
 **node_info** | [***::models::V1NodeSystemInfo**](v1.NodeSystemInfo.md) | Set of ids/uuids to uniquely identify the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#info | [optional] [default to null]

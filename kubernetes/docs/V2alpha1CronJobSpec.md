@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**concurrency_policy** | **String** | Specifies how to treat concurrent executions of a Job. Defaults to Allow. | [optional] [default to null]
+**concurrency_policy** | **String** | Specifies how to treat concurrent executions of a Job. Valid values are: - \&quot;Allow\&quot; (default): allows CronJobs to run concurrently; - \&quot;Forbid\&quot;: forbids concurrent runs, skipping next run if previous run hasn&#39;t finished yet; - \&quot;Replace\&quot;: cancels currently running job and replaces it with a new one | [optional] [default to null]
 **failed_jobs_history_limit** | **i32** | The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. | [optional] [default to null]
 **job_template** | [***::models::V2alpha1JobTemplateSpec**](v2alpha1.JobTemplateSpec.md) | Specifies the job that will be created when executing a CronJob. | [default to null]
 **schedule** | **String** | The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron. | [default to null]
