@@ -1,7 +1,7 @@
 use std::env;
 
 use failure::Error;
-use openssl::x509::X509;
+use native_tls::Certificate;
 
 use config::utils;
 
@@ -30,9 +30,9 @@ pub fn load_token() -> Result<String, Error> {
 }
 
 /// Returns certification from specified path in cluster.
-pub fn load_cert() -> Result<X509, Error> {
+pub fn load_cert() -> Result<Certificate, Error> {
     let ca = utils::data_or_file_with_base64(&None, &Some(SERVICE_CERTFILE.to_string()))?;
-    X509::from_pem(&ca).map_err(Error::from)
+    Certificate::from_pem(&ca).map_err(Error::from)
 }
 
 #[test]

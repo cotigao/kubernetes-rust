@@ -5,11 +5,13 @@ extern crate serde_derive;
 
 extern crate base64;
 extern crate dirs;
-extern crate k8s_openapi;
+extern crate kubernetes;
 extern crate openssl;
-extern crate reqwest;
+extern crate hyper;
+extern crate hyper_tls;
+extern crate native_tls;
+extern crate tokio_core;
 extern crate serde;
 extern crate serde_yaml;
 
-pub mod client;
 pub mod config;

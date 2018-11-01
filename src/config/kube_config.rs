@@ -1,6 +1,7 @@
 use std::path::Path;
 
 use failure::Error;
+use native_tls::Certificate;
 use openssl::pkcs12::Pkcs12;
 use openssl::pkey::PKey;
 use openssl::x509::X509;
@@ -55,8 +56,8 @@ impl KubeConfigLoader {
             .map_err(Error::from)
     }
 
-    pub fn ca(&self) -> Result<X509, Error> {
+    pub fn ca(&self) -> Result<Certificate, Error> {
         let ca = &self.cluster.load_certificate_authority()?;
-        X509::from_pem(&ca).map_err(Error::from)
+        Certificate::from_pem(&ca).map_err(Error::from)
     }
 }

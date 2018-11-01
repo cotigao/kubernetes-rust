@@ -3,26 +3,17 @@ mod incluster_config;
 mod kube_config;
 mod utils;
 
-use base64;
 use failure::Error;
-use reqwest::{header, Certificate, Client, Identity};
+use hyper::client::HttpConnector;
+use hyper::header::{Authorization, Basic, Bearer, Headers};
+use hyper::Client;
+use hyper_tls::HttpsConnector;
+use kubernetes::apis::configuration::Configuration;
+use native_tls::Pkcs12;
+use native_tls::TlsConnector;
+use tokio_core::reactor::Handle;
 
 use self::kube_config::KubeConfigLoader;
-
-/// Configuration stores kubernetes path and client for requests.
-pub struct Configuration {
-    pub base_path: String,
-    pub client: Client,
-}
-
-impl Configuration {
-    pub fn new(base_path: String, client: Client) -> Self {
-        Configuration {
-            base_path: base_path.to_owned(),
-            client: client,
-        }
-    }
-}
 
 /// Returns a config includes authentication and cluster infomation from kubeconfig file.
 ///
@@ -33,50 +24,48 @@ impl Configuration {
 /// let kubeconfig = config::load_kube_config()
 ///     .expect("failed to load kubeconfig");
 /// ```
-pub fn load_kube_config() -> Result<Configuration, Error> {
+pub fn load_kube_config(
+    threads: usize,
+    handle: &Handle,
+) -> Result<Configuration<HttpsConnector<HttpConnector>>, Error> {
     let kubeconfig = utils::kubeconfig_path()
         .or_else(utils::default_kube_path)
         .ok_or(format_err!("Unable to load kubeconfig"))?;
 
     let loader = KubeConfigLoader::load(kubeconfig)?;
 
+    let mut tls = TlsConnector::builder()?;
     let p12 = loader.p12(" ")?;
-    let req_p12 = Identity::from_pkcs12_der(&p12.to_der()?, " ")?;
+    tls.identity(Pkcs12::from_der(&p12.to_der()?, " ")?)?;
 
     let ca = loader.ca()?;
-    let req_ca = Certificate::from_der(&ca.to_der()?)?;
+    tls.add_root_certificate(ca)?;
 
-    let mut headers = header::HeaderMap::new();
-
+    let mut headers = Headers::new();
     match (
         utils::data_or_file(&loader.user.token, &loader.user.token_file),
         (loader.user.username, loader.user.password),
     ) {
         (Ok(token), _) => {
-            headers.insert(
-                header::AUTHORIZATION,
-                header::HeaderValue::from_str(&format!("Bearer {}", token))?,
-            );
+            headers.set(Authorization(Bearer { token: token }));
         }
-        (_, (Some(u), Some(p))) => {
-            let encoded = base64::encode(&format!("{}:{}", u, p));
-            headers.insert(
-                header::AUTHORIZATION,
-                header::HeaderValue::from_str(&format!("Basic {}", encoded))?,
-            );
+        (_, (Some(u), maybe_p)) => {
+            headers.set(Authorization(Basic {
+                username: u,
+                password: maybe_p,
+            }));
         }
         _ => {}
     }
 
-    let client_builder = Client::builder()
-        .identity(req_p12)
-        .add_root_certificate(req_ca)
-        .default_headers(headers);
+    let mut http = HttpConnector::new(threads, &handle);
+    http.enforce_http(false);
+    let client_builder = Client::configure().connector(HttpsConnector::from((http, tls.build()?)));
 
-    Ok(Configuration::new(
-        loader.cluster.server,
-        client_builder.build()?,
-    ))
+    Ok(Configuration {
+        base_path: loader.cluster.server,
+        client: client_builder.build(&handle),
+    })
 }
 
 /// Returns a config which is used by clients within pods on kubernetes.
@@ -89,26 +78,30 @@ pub fn load_kube_config() -> Result<Configuration, Error> {
 /// let kubeconfig = config::incluster_config()
 ///     .expect("failed to load incluster config");
 /// ```
-pub fn incluster_config() -> Result<Configuration, Error> {
+pub fn incluster_config(
+    threads: usize,
+    handle: &Handle,
+) -> Result<Configuration<HttpsConnector<HttpConnector>>, Error> {
     let server = incluster_config::kube_server().ok_or(format_err!(
         "Unable to load incluster config, {} and {} must be defined",
         incluster_config::SERVICE_HOSTENV,
         incluster_config::SERVICE_PORTENV
     ))?;
 
+    let mut tls = TlsConnector::builder()?;
     let ca = incluster_config::load_cert()?;
-    let req_ca = Certificate::from_der(&ca.to_der()?)?;
+    tls.add_root_certificate(ca)?;
 
     let token = incluster_config::load_token()?;
-    let mut headers = header::HeaderMap::new();
-    headers.insert(
-        header::AUTHORIZATION,
-        header::HeaderValue::from_str(&format!("Bearer {}", token))?,
-    );
+    let mut headers = Headers::new();
+    headers.set(Authorization(Bearer { token: token }));
 
-    let client_builder = Client::builder()
-        .add_root_certificate(req_ca)
-        .default_headers(headers);
+    let mut http = HttpConnector::new(threads, &handle);
+    http.enforce_http(false);
+    let client_builder = Client::configure().connector(HttpsConnector::from((http, tls.build()?)));
 
-    Ok(Configuration::new(server, client_builder.build()?))
+    Ok(Configuration {
+        base_path: server,
+        client: client_builder.build(&handle),
+    })
 }
