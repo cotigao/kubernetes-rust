@@ -52,7 +52,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -88,7 +88,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -126,7 +126,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -191,7 +191,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -229,7 +229,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -267,7 +267,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -302,7 +302,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -337,7 +337,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -369,7 +369,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/apis/batch/v1beta1/namespaces/{namespace}/cronjobs/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -399,7 +399,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -434,7 +434,7 @@ impl<C: hyper::client::Connect>BatchV1beta1Api for BatchV1beta1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();

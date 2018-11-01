@@ -238,7 +238,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -268,7 +268,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -298,7 +298,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -328,7 +328,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -358,7 +358,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -388,7 +388,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -418,7 +418,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("container", &container.to_string())
             .append_pair("stderr", &stderr.to_string())
             .append_pair("stdin", &stdin.to_string())
@@ -452,7 +452,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("command", &command.to_string())
             .append_pair("container", &container.to_string())
             .append_pair("stderr", &stderr.to_string())
@@ -487,7 +487,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("ports", &ports.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/portforward{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -517,7 +517,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -547,7 +547,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -577,7 +577,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -607,7 +607,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -637,7 +637,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -667,7 +667,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -697,7 +697,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -727,7 +727,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -757,7 +757,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -787,7 +787,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -817,7 +817,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -847,7 +847,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Head;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -877,7 +877,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -907,7 +907,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -937,7 +937,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -967,7 +967,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -997,7 +997,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -1027,7 +1027,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Options;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -1057,7 +1057,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1087,7 +1087,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1117,7 +1117,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1147,7 +1147,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1177,7 +1177,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -1207,7 +1207,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -1237,7 +1237,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("container", &container.to_string())
             .append_pair("stderr", &stderr.to_string())
             .append_pair("stdin", &stdin.to_string())
@@ -1271,7 +1271,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("command", &command.to_string())
             .append_pair("container", &container.to_string())
             .append_pair("stderr", &stderr.to_string())
@@ -1306,7 +1306,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("ports", &ports.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/portforward{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1336,7 +1336,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1366,7 +1366,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1396,7 +1396,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1426,7 +1426,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1456,7 +1456,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -1486,7 +1486,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -1516,7 +1516,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1546,7 +1546,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1576,7 +1576,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -1606,7 +1606,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}{}", configuration.base_path, query, name=name, namespace=namespace, path=path);
@@ -1636,7 +1636,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy{}", configuration.base_path, query, name=name);
@@ -1666,7 +1666,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("path", &path2.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/proxy/{path}{}", configuration.base_path, query, name=name, path=path);
@@ -1696,7 +1696,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1732,7 +1732,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
@@ -1768,7 +1768,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1804,7 +1804,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1840,7 +1840,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1876,7 +1876,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1912,7 +1912,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1948,7 +1948,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -1984,7 +1984,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
@@ -2020,7 +2020,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
@@ -2056,7 +2056,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2092,7 +2092,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2128,7 +2128,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2164,7 +2164,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2200,7 +2200,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2236,7 +2236,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2272,7 +2272,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2308,7 +2308,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -2344,7 +2344,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2382,7 +2382,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2420,7 +2420,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2458,7 +2458,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2496,7 +2496,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2534,7 +2534,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2572,7 +2572,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2610,7 +2610,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2648,7 +2648,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2686,7 +2686,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2724,7 +2724,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2762,7 +2762,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2800,7 +2800,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -2838,7 +2838,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -2876,7 +2876,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -2914,7 +2914,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -2952,7 +2952,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -2990,7 +2990,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3028,7 +3028,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3066,7 +3066,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3104,7 +3104,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3142,7 +3142,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3180,7 +3180,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3218,7 +3218,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3256,7 +3256,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3294,7 +3294,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3332,7 +3332,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3370,7 +3370,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -3435,7 +3435,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -3473,7 +3473,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -3511,7 +3511,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -3549,7 +3549,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -3587,7 +3587,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -3625,7 +3625,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3663,7 +3663,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3701,7 +3701,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3739,7 +3739,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3777,7 +3777,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3815,7 +3815,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3853,7 +3853,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3891,7 +3891,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3929,7 +3929,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -3967,7 +3967,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4005,7 +4005,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4043,7 +4043,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4081,7 +4081,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4119,7 +4119,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4157,7 +4157,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -4195,7 +4195,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4233,7 +4233,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4271,7 +4271,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4309,7 +4309,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4347,7 +4347,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4385,7 +4385,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4423,7 +4423,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4461,7 +4461,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("continue", &_continue.to_string())
             .append_pair("fieldSelector", &field_selector.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
@@ -4499,7 +4499,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4534,7 +4534,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4569,7 +4569,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4604,7 +4604,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4639,7 +4639,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4674,7 +4674,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4709,7 +4709,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4744,7 +4744,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4779,7 +4779,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4814,7 +4814,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4849,7 +4849,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4884,7 +4884,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4919,7 +4919,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4954,7 +4954,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -4989,7 +4989,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5024,7 +5024,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5059,7 +5059,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5094,7 +5094,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5129,7 +5129,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5164,7 +5164,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5199,7 +5199,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5234,7 +5234,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5269,7 +5269,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5304,7 +5304,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -5339,7 +5339,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/componentstatuses/{name}{}", configuration.base_path, query, name=name);
@@ -5369,7 +5369,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5401,7 +5401,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{name}/status{}", configuration.base_path, query, name=name);
@@ -5431,7 +5431,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5463,7 +5463,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5495,7 +5495,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5527,7 +5527,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5559,7 +5559,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5591,7 +5591,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/persistentvolumeclaims/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -5621,7 +5621,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5653,7 +5653,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("container", &container.to_string())
             .append_pair("follow", &follow.to_string())
             .append_pair("limitBytes", &limit_bytes.to_string())
@@ -5690,7 +5690,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/pods/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -5720,7 +5720,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5752,7 +5752,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5784,7 +5784,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/replicationcontrollers/{name}/scale{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -5814,7 +5814,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/replicationcontrollers/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -5844,7 +5844,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5876,7 +5876,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/resourcequotas/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -5906,7 +5906,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5938,7 +5938,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -5970,7 +5970,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -6002,7 +6002,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/namespaces/{namespace}/services/{name}/status{}", configuration.base_path, query, name=name, namespace=namespace);
@@ -6032,7 +6032,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -6064,7 +6064,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/nodes/{name}/status{}", configuration.base_path, query, name=name);
@@ -6094,7 +6094,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -6126,7 +6126,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/api/v1/persistentvolumes/{name}/status{}", configuration.base_path, query, name=name);
@@ -6156,7 +6156,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6191,7 +6191,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
@@ -6226,7 +6226,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6261,7 +6261,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6296,7 +6296,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6331,7 +6331,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6366,7 +6366,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6401,7 +6401,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6436,7 +6436,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6471,7 +6471,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6506,7 +6506,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6541,7 +6541,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6576,7 +6576,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6611,7 +6611,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6646,7 +6646,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6681,7 +6681,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6716,7 +6716,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6751,7 +6751,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6786,7 +6786,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6821,7 +6821,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6856,7 +6856,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6891,7 +6891,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6926,7 +6926,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6961,7 +6961,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -6996,7 +6996,7 @@ impl<C: hyper::client::Connect>CoreV1Api for CoreV1ApiClient<C> {
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();

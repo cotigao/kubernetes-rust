@@ -42,7 +42,7 @@ impl<C: hyper::client::Connect>AuthenticationV1Api for AuthenticationV1ApiClient
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())

@@ -52,7 +52,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
@@ -88,7 +88,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
@@ -126,7 +126,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -191,7 +191,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("includeUninitialized", &include_uninitialized.to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("continue", &_continue.to_string())
@@ -229,7 +229,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -264,7 +264,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Patch;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -299,7 +299,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("exact", &exact.to_string())
             .append_pair("export", &export.to_string())
@@ -331,7 +331,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/apis/certificates.k8s.io/v1beta1/certificatesigningrequests/{name}/status{}", configuration.base_path, query, name=name);
@@ -361,7 +361,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();
@@ -396,7 +396,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
@@ -431,7 +431,7 @@ impl<C: hyper::client::Connect>CertificatesV1beta1Api for CertificatesV1beta1Api
 
         let method = hyper::Method::Put;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("dryRun", &dry_run.to_string())
             .finish();

@@ -64,7 +64,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/apis/{group}/{version}/{plural}{}", configuration.base_path, query, group=group, version=version, plural=plural);
@@ -98,7 +98,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Post;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .finish();
         let uri_str = format!("{}/apis/{group}/{version}/namespaces/{namespace}/{plural}{}", configuration.base_path, query, group=group, version=version, namespace=namespace, plural=plural);
@@ -132,7 +132,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
             .append_pair("orphanDependents", &orphan_dependents.to_string())
             .append_pair("propagationPolicy", &propagation_policy.to_string())
@@ -168,7 +168,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Delete;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("gracePeriodSeconds", &grace_period_seconds.to_string())
             .append_pair("orphanDependents", &orphan_dependents.to_string())
             .append_pair("propagationPolicy", &propagation_policy.to_string())
@@ -366,7 +366,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("labelSelector", &label_selector.to_string())
             .append_pair("resourceVersion", &resource_version.to_string())
@@ -399,7 +399,7 @@ impl<C: hyper::client::Connect>CustomObjectsApi for CustomObjectsApiClient<C> {
 
         let method = hyper::Method::Get;
 
-        let query = ::url::form_urlencoded::Serializer::new(String::new())
+        let query = ::url::form_urlencoded::Serializer::new("?".to_string())
             .append_pair("pretty", &pretty.to_string())
             .append_pair("labelSelector", &label_selector.to_string())
             .append_pair("resourceVersion", &resource_version.to_string())
