@@ -7,6 +7,7 @@ use failure::Error;
 use hyper::client::HttpConnector;
 use hyper::header::{Authorization, Basic, Bearer, Headers};
 use hyper::Client;
+use hyper::{Request, Method};
 use hyper_tls::HttpsConnector;
 use kubernetes::apis::configuration::Configuration;
 use native_tls::Pkcs12;
@@ -65,6 +66,7 @@ pub fn load_kube_config(
     Ok(Configuration {
         base_path: loader.cluster.server,
         client: client_builder.build(&handle),
+        default_header: headers,
     })
 }
 
@@ -103,5 +105,6 @@ pub fn incluster_config(
     Ok(Configuration {
         base_path: server,
         client: client_builder.build(&handle),
+        default_header: headers,
     })
 }
