@@ -1,5 +1,5 @@
 [package]
-name = "rust-base"
+name = "kubernetes"
 version = "0.1.0"
 description = "Kubernetes rust client"
 authors = ["ynqa <un.pensiero.vano@gmail.com>"]
@@ -26,6 +26,6 @@ openssl = "0.10.12"
 tempfile = "3.0.4"
 futures = "0.1.25"
 
-[dependencies.kubernetes]
+[dependencies.k8s]
 version = "1.0.0-snapshot"
-path = "kubernetes"
+path = "k8s"

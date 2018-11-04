@@ -1,0 +1,30 @@
+# ExtensionsV1beta1PodSecurityPolicySpec
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**allow_privilege_escalation** | **bool** | allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true. | [optional] [default to null]
+**allowed_capabilities** | **Vec<String>** | allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author&#39;s discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities. | [optional] [default to null]
+**allowed_flex_volumes** | [**Vec<::models::ExtensionsV1beta1AllowedFlexVolume>**](extensions.v1beta1.AllowedFlexVolume.md) | allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all Flexvolumes may be used.  This parameter is effective only when the usage of the Flexvolumes is allowed in the \&quot;volumes\&quot; field. | [optional] [default to null]
+**allowed_host_paths** | [**Vec<::models::ExtensionsV1beta1AllowedHostPath>**](extensions.v1beta1.AllowedHostPath.md) | allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths may be used. | [optional] [default to null]
+**allowed_proc_mount_types** | **Vec<String>** | AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to be enabled. | [optional] [default to null]
+**allowed_unsafe_sysctls** | **Vec<String>** | allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \&quot;*\&quot; in which case it is considered as a prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to whitelist all allowed unsafe sysctls explicitly to avoid rejection.  Examples: e.g. \&quot;foo/_*\&quot; allows \&quot;foo/bar\&quot;, \&quot;foo/baz\&quot;, etc. e.g. \&quot;foo.*\&quot; allows \&quot;foo.bar\&quot;, \&quot;foo.baz\&quot;, etc. | [optional] [default to null]
+**default_add_capabilities** | **Vec<String>** | defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list. | [optional] [default to null]
+**default_allow_privilege_escalation** | **bool** | defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain more privileges than its parent process. | [optional] [default to null]
+**forbidden_sysctls** | **Vec<String>** | forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is either a plain sysctl name or ends in \&quot;*\&quot; in which case it is considered as a prefix of forbidden sysctls. Single * means all sysctls are forbidden.  Examples: e.g. \&quot;foo/_*\&quot; forbids \&quot;foo/bar\&quot;, \&quot;foo/baz\&quot;, etc. e.g. \&quot;foo.*\&quot; forbids \&quot;foo.bar\&quot;, \&quot;foo.baz\&quot;, etc. | [optional] [default to null]
+**fs_group** | [***::models::ExtensionsV1beta1FsGroupStrategyOptions**](extensions.v1beta1.FSGroupStrategyOptions.md) | fsGroup is the strategy that will dictate what fs group is used by the SecurityContext. | [default to null]
+**host_ipc** | **bool** | hostIPC determines if the policy allows the use of HostIPC in the pod spec. | [optional] [default to null]
+**host_network** | **bool** | hostNetwork determines if the policy allows the use of HostNetwork in the pod spec. | [optional] [default to null]
+**host_pid** | **bool** | hostPID determines if the policy allows the use of HostPID in the pod spec. | [optional] [default to null]
+**host_ports** | [**Vec<::models::ExtensionsV1beta1HostPortRange>**](extensions.v1beta1.HostPortRange.md) | hostPorts determines which host port ranges are allowed to be exposed. | [optional] [default to null]
+**privileged** | **bool** | privileged determines if a pod can request to be run as privileged. | [optional] [default to null]
+**read_only_root_filesystem** | **bool** | readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to. | [optional] [default to null]
+**required_drop_capabilities** | **Vec<String>** | requiredDropCapabilities are the capabilities that will be dropped from the container.  These are required to be dropped and cannot be added. | [optional] [default to null]
+**run_as_user** | [***::models::ExtensionsV1beta1RunAsUserStrategyOptions**](extensions.v1beta1.RunAsUserStrategyOptions.md) | runAsUser is the strategy that will dictate the allowable RunAsUser values that may be set. | [default to null]
+**se_linux** | [***::models::ExtensionsV1beta1SeLinuxStrategyOptions**](extensions.v1beta1.SELinuxStrategyOptions.md) | seLinux is the strategy that will dictate the allowable labels that may be set. | [default to null]
+**supplemental_groups** | [***::models::ExtensionsV1beta1SupplementalGroupsStrategyOptions**](extensions.v1beta1.SupplementalGroupsStrategyOptions.md) | supplementalGroups is the strategy that will dictate what supplemental groups are used by the SecurityContext. | [default to null]
+**volumes** | **Vec<String>** | volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use &#39;*&#39;. | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

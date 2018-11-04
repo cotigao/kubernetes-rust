@@ -1,14 +1,14 @@
 extern crate failure;
 extern crate futures;
+extern crate k8s;
 extern crate kubernetes;
-extern crate rust_base;
 extern crate tokio_core;
 
 use futures::Future;
 use tokio_core::reactor::Core;
 
-use kubernetes::apis::client::APIClient;
-use rust_base::config;
+use k8s::apis::client::APIClient;
+use kubernetes::config;
 
 fn main() {
     let mut event_loop = Core::new().expect("failed to initialize core");

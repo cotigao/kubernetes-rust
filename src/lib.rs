@@ -7,7 +7,7 @@ extern crate base64;
 extern crate dirs;
 extern crate hyper;
 extern crate hyper_tls;
-extern crate kubernetes;
+extern crate k8s;
 extern crate native_tls;
 extern crate openssl;
 extern crate serde;

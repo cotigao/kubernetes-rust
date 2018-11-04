@@ -22,4 +22,4 @@ export KUBERNETES_BRANCH="release-1.12"
 export CLIENT_VERSION="1.0.0-snapshot"
 
 # Name of the release package
-export PACKAGE_NAME="kubernetes"
+export PACKAGE_NAME="k8s"

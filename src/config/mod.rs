@@ -8,7 +8,7 @@ use hyper::client::HttpConnector;
 use hyper::header::{Basic, Bearer};
 use hyper::Client;
 use hyper_tls::HttpsConnector;
-use kubernetes::apis::configuration::Configuration;
+use k8s::apis::configuration::Configuration;
 use native_tls::Pkcs12;
 use native_tls::TlsConnector;
 use tokio_core::reactor::Handle;
