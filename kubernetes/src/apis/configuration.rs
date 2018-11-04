@@ -13,7 +13,8 @@ use hyper;
 pub struct Configuration<C: hyper::client::Connect> {
   pub base_path: String,
   pub client: hyper::client::Client<C>,
-  pub default_header: hyper::header::Headers
+  pub bearer: Option<hyper::header::Bearer>,
+  pub basic: Option<hyper::header::Basic>,
 }
 
 impl<C: hyper::client::Connect> Configuration<C> {
@@ -21,7 +22,8 @@ impl<C: hyper::client::Connect> Configuration<C> {
     Configuration {
       base_path: "https://localhost".to_owned(),
       client: client,
-      default_header: hyper::header::Headers::new(),
+      bearer: None,
+      basic: None,
     }
   }
 }

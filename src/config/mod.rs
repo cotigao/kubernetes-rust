@@ -5,9 +5,8 @@ mod utils;
 
 use failure::Error;
 use hyper::client::HttpConnector;
-use hyper::header::{Authorization, Basic, Bearer, Headers};
+use hyper::header::{Basic, Bearer};
 use hyper::Client;
-use hyper::{Request, Method};
 use hyper_tls::HttpsConnector;
 use kubernetes::apis::configuration::Configuration;
 use native_tls::Pkcs12;
@@ -42,22 +41,20 @@ pub fn load_kube_config(
     let ca = loader.ca()?;
     tls.add_root_certificate(ca)?;
 
-    let mut headers = Headers::new();
-    match (
+    let (bearer, basic) = match (
         utils::data_or_file(&loader.user.token, &loader.user.token_file),
         (loader.user.username, loader.user.password),
     ) {
-        (Ok(token), _) => {
-            headers.set(Authorization(Bearer { token: token }));
-        }
-        (_, (Some(u), maybe_p)) => {
-            headers.set(Authorization(Basic {
+        (Ok(token), _) => (Some(Bearer { token: token }), None),
+        (_, (Some(u), maybe_p)) => (
+            None,
+            Some(Basic {
                 username: u,
                 password: maybe_p,
-            }));
-        }
-        _ => {}
-    }
+            }),
+        ),
+        _ => (None, None),
+    };
 
     let mut http = HttpConnector::new(threads, &handle);
     http.enforce_http(false);
@@ -66,7 +63,8 @@ pub fn load_kube_config(
     Ok(Configuration {
         base_path: loader.cluster.server,
         client: client_builder.build(&handle),
-        default_header: headers,
+        bearer: bearer,
+        basic: basic,
     })
 }
 
@@ -95,8 +93,6 @@ pub fn incluster_config(
     tls.add_root_certificate(ca)?;
 
     let token = incluster_config::load_token()?;
-    let mut headers = Headers::new();
-    headers.set(Authorization(Bearer { token: token }));
 
     let mut http = HttpConnector::new(threads, &handle);
     http.enforce_http(false);
@@ -105,6 +101,7 @@ pub fn incluster_config(
     Ok(Configuration {
         base_path: server,
         client: client_builder.build(&handle),
-        default_header: headers,
+        bearer: Some(Bearer { token: token }),
+        basic: None,
     })
 }

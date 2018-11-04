@@ -57,7 +57,12 @@ impl<C: hyper::client::Connect>AuthorizationV1beta1Api for AuthorizationV1beta1A
         // if let Err(e) = uri {
         //     return Box::new(futures::future::err(e));
         // }
-        let mut req = hyper::Request::new(method, uri.unwrap());
+                let mut req = hyper::Request::new(method, uri.unwrap());
+        match (&configuration.bearer, &configuration.basic) {
+            (Some(b), _) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            (_, Some(b)) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            _ => {}
+        }
 
 
         let serialized = serde_json::to_string(&body).unwrap();
@@ -93,7 +98,12 @@ impl<C: hyper::client::Connect>AuthorizationV1beta1Api for AuthorizationV1beta1A
         // if let Err(e) = uri {
         //     return Box::new(futures::future::err(e));
         // }
-        let mut req = hyper::Request::new(method, uri.unwrap());
+                let mut req = hyper::Request::new(method, uri.unwrap());
+        match (&configuration.bearer, &configuration.basic) {
+            (Some(b), _) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            (_, Some(b)) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            _ => {}
+        }
 
 
         let serialized = serde_json::to_string(&body).unwrap();
@@ -129,7 +139,12 @@ impl<C: hyper::client::Connect>AuthorizationV1beta1Api for AuthorizationV1beta1A
         // if let Err(e) = uri {
         //     return Box::new(futures::future::err(e));
         // }
-        let mut req = hyper::Request::new(method, uri.unwrap());
+                let mut req = hyper::Request::new(method, uri.unwrap());
+        match (&configuration.bearer, &configuration.basic) {
+            (Some(b), _) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            (_, Some(b)) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            _ => {}
+        }
 
 
         let serialized = serde_json::to_string(&body).unwrap();
@@ -165,7 +180,12 @@ impl<C: hyper::client::Connect>AuthorizationV1beta1Api for AuthorizationV1beta1A
         // if let Err(e) = uri {
         //     return Box::new(futures::future::err(e));
         // }
-        let mut req = hyper::Request::new(method, uri.unwrap());
+                let mut req = hyper::Request::new(method, uri.unwrap());
+        match (&configuration.bearer, &configuration.basic) {
+            (Some(b), _) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            (_, Some(b)) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            _ => {}
+        }
 
 
         let serialized = serde_json::to_string(&body).unwrap();
@@ -196,7 +216,12 @@ impl<C: hyper::client::Connect>AuthorizationV1beta1Api for AuthorizationV1beta1A
         // if let Err(e) = uri {
         //     return Box::new(futures::future::err(e));
         // }
-        let mut req = hyper::Request::new(method, uri.unwrap());
+                let mut req = hyper::Request::new(method, uri.unwrap());
+        match (&configuration.bearer, &configuration.basic) {
+            (Some(b), _) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            (_, Some(b)) => req.headers_mut().set(hyper::header::Authorization(b.clone())),
+            _ => {}
+        }
 
 
 
