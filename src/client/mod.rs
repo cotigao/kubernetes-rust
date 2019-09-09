@@ -35,6 +35,7 @@ impl APIClient {
     where
         T: DeserializeOwned,
     {
+				println!("hello 2");
         let (parts, body) = request.into_parts();
         let uri_str = format!("{}{}", self.configuration.base_path, parts.uri);
         let req = match parts.method {
