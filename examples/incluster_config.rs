@@ -25,4 +25,5 @@ fn main() {
         .request::<v1::PodList>(req)
         .expect("failed to list up pods");
     println!("{:?}", list_pod);
+    println!("test {:?}", list_pod);
 }
